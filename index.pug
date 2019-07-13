@@ -1,3 +1,9 @@
+mixin product(img, title, p)
+    .product
+        img(src=img)
+        h2=title
+        p=p
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -6,9 +12,17 @@ html(lang="zh")
         title icecream
     body
     .banner
-    title 標題
-    p 我是內文我是內文我是內文我是內文我是內文
-    .product
-    .product
-    .product
-    .about
+        ul
+            li 連結
+            li Logo
+            li 連結
+    .content
+        .introduction
+            h1 Title
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius temporibus adipisci assumenda magnam veniam expedita. Nulla sequi voluptatum at.
+        +product("product1.png", "小標題", "內文")
+        +product("product2.png", "小標題", "內文")
+        +product("product3.png", "小標題", "內文")
+        +product("about.png", "中標題", "內文")
+    .footer icecream &copy 2019
+
