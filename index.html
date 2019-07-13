@@ -3,37 +3,47 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>icecream</title>
   </head>
   <body></body>
   <div class="banner">
-    <ul>
-      <li>連結</li>
-      <li>Logo</li>
-      <li>連結</li>
+    <ul data-aos="fade-down" data-aos-duration="1000">
+      <li><a href="#">關於我們</a></li>
+      <li id="logo"><a href="#">ICEcream</a></li>
+      <li><a href="#">產品介紹</a></li>
     </ul>
   </div>
   <div class="content">
     <div class="introduction">
-      <h1>Title</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius temporibus adipisci assumenda magnam veniam expedita. Nulla sequi voluptatum at.</p>
+      <h1>產品介紹</h1>
+      <p>新鮮水果製成的冰棒、進口濃度高的巧克力</p>
     </div>
-    <div class="product"><img src="product1.png"/>
-      <h2>小標題</h2>
-      <p>內文</p>
+    <div class="productbox">
+      <div class="product" data-aos="zoom-in-up"><img src="product1.png"/>
+        <h2>果粒冰</h2>
+        <p>與在地小農契作，每口都吃的到當季水果果粒</p>
+      </div>
+      <div class="product" data-aos="zoom-in-up"><img src="product2.png"/>
+        <h2>巧克力冰</h2>
+        <p>瑞士進口巧克力粉，搭配現磨花生粒</p>
+      </div>
+      <div class="product" data-aos="zoom-in-up"><img src="product3.png"/>
+        <h2>果汁冰</h2>
+        <p>每款都是當天現榨果汁製作而成</p>
+      </div>
     </div>
-    <div class="product"><img src="product2.png"/>
-      <h2>小標題</h2>
-      <p>內文</p>
+    <div class="about" data-aos="fade-up" data-aos-duration="1000"> 
+      <div class="pic"><img src="about.png"/></div>
+      <div class="message">
+        <h2>ICEcream</h2>
+        <p>炎炎夏日最適合來枝冰棒，本店招牌[果粒冰]採用當季新鮮水果製作冰棒﹐讓人每口都吃的到新鮮水果的鮮甜。</p>
+      </div>
     </div>
-    <div class="product"><img src="product3.png"/>
-      <h2>小標題</h2>
-      <p>內文</p>
-    </div>
-    <div class="product"><img src="about.png"/>
-      <h2>中標題</h2>
-      <p>內文</p>
-    </div>
-  </div>
-  <div class="footer">icecream &copy 2019</div>
+    <div class="footer">icecream &copy 2019</div>
+  </div>  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+        AOS.init();
+     </script>    
 </html>

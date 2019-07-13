@@ -1,0 +1,105 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
+$pfont: 18px;
+
+* {
+    border: 0.5px solid rgba(0, 0, 0, 0) !important;
+}
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(banner.png);
+    background-size: cover;
+    color: lightcoral;
+    ul{
+        width: 800px;
+        height: 100px;
+        margin: 50px auto 0 auto;
+        text-align: center;
+    }
+    #logo{
+        font-size: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+        li{
+            display: inline-block;
+            font-size: 25px;
+            padding: 20px;
+        }
+        a{
+            color: lightcoral;
+            text-decoration: none;
+        }
+}
+.content {
+    width:1200px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 800;
+        text-align: center;
+        margin: 85px 0 60px 0;
+    }
+    p {
+        font-size: $pfont;
+        text-align: center;
+        margin: 0 0 60px 0;
+    }
+}
+.productbox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    .product{
+        img{
+            width:100%;
+        }
+        h2{
+            font-size:48px;
+            font-weight: 500;
+            text-align: center;
+            margin:20px 0 20px 0;
+        }
+        p{
+            font-size: $pfont;
+            text-align: center;
+        }
+    }
+}
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 70px 20px 70px;
+    .pic {
+        width: 100%;
+        text-align: center;
+        margin: 0 20px 0 0;
+    }
+    .message {
+        width: 500px;
+        margin: 50px 0 20px 20px;
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            line-height: 2;
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+    }
+}
+.footer {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+    padding: 10px;
+}
+
+

@@ -1,5 +1,5 @@
 mixin product(img, title, p)
-    .product
+    .product(data-aos="zoom-in-up")
         img(src=img)
         h2=title
         p=p
@@ -9,20 +9,32 @@ html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="index.css")
+        link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
         title icecream
     body
     .banner
-        ul
-            li 連結
-            li Logo
-            li 連結
+        ul(data-aos="fade-down" data-aos-duration="1000")
+            li #[a(href="#") 關於我們]
+            li#logo #[a(href="#") ICEcream]
+            li #[a(href="#") 產品介紹]
     .content
         .introduction
-            h1 Title
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius temporibus adipisci assumenda magnam veniam expedita. Nulla sequi voluptatum at.
-        +product("product1.png", "小標題", "內文")
-        +product("product2.png", "小標題", "內文")
-        +product("product3.png", "小標題", "內文")
-        +product("about.png", "中標題", "內文")
-    .footer icecream &copy 2019
+            h1 產品介紹
+            p 新鮮水果製成的冰棒、進口濃度高的巧克力
+        .productbox
+            +product("product1.png", "果粒冰", "與在地小農契作，每口都吃的到當季水果果粒")
+            +product("product2.png", "巧克力冰", "瑞士進口巧克力粉，搭配現磨花生粒")
+            +product("product3.png", "果汁冰", "每款都是當天現榨果汁製作而成")
+        .about(data-aos="fade-up" data-aos-duration="1000") 
+            .pic
+                img(src="about.png")
+            .message
+                h2 ICEcream
+                p 炎炎夏日最適合來枝冰棒，本店招牌[果粒冰]採用當季新鮮水果製作冰棒﹐讓人每口都吃的到新鮮水果的鮮甜。
+        .footer icecream &copy 2019
+    |   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    |    <script>
+    |       AOS.init();
+    |    </script>    
 
